@@ -22,7 +22,6 @@ public class Connect4Grid : MonoBehaviour
     }
 
     // Crear el grid inicial del juego
-
     private void CreateGrid()
     {
         _grid = new GameObject[columns, rows];
@@ -63,7 +62,7 @@ public class Connect4Grid : MonoBehaviour
         // Cambiar al siguiente jugador
         _currentPlayer = _currentPlayer == 1 ? 2 : 1;
     }
-
+    
     private bool CheckWin(Renderer cellRenderer)
     {
         for (var col = 0; col < columns; col++)
